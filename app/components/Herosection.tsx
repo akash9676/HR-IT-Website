@@ -14,11 +14,14 @@ const HeroSection = () => {
                             HR- IT Solutions
                         </p>
                         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                        Transforming Technology into Success
+                            Transforming Technology into Success
                         </h1>
                         <p className="text-gray-700 text-base md:text-lg mb-6 text-justify">
-                        We empower businesses with innovative IT services and solutions, helping them stay competitive and efficient in a rapidly changing digital world. Our team is dedicated to providing the best tools and resources to ensure your business thrives.
-
+                            We empower businesses with innovative IT services
+                            and solutions, helping them stay competitive and
+                            efficient in a rapidly changing digital world. Our
+                            team is dedicated to providing the best tools and
+                            resources to ensure your business thrives.
                         </p>
                         <a
                             href="#"

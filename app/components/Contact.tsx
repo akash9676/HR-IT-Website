@@ -12,7 +12,7 @@ const Contact = () => {
 
                 <p className="text-gray-700 mb-8 text-center">
                     **Have a question or need assistance? Contact us today and
-                    let's start solving your IT challenges together!**
+                    lets start solving your IT challenges together!**
                 </p>
 
                 <form
