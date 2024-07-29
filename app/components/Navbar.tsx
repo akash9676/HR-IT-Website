@@ -27,7 +27,7 @@ const Navbar = () => {
 
     return (
         <header
-            className={`top-0 left-0 w-full bg-white py-4 border-b z-10 transition-shadow ${
+            className={`w-full bg-white py-5 border-b z-10 transition-shadow fixed ${
                 headerActive ? "shadow-lg" : ""
             }`}
         >
@@ -45,7 +45,7 @@ const Navbar = () => {
                     aria-label="Toggle menu"
                 >
                     {navbarOpen ? (
-                        <X className="text-black" />
+                        <X className="text-black " />
                     ) : (
                         <Menu className="text-black" />
                     )}

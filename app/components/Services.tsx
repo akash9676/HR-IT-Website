@@ -12,7 +12,7 @@ const Services = () => {
         <section
             id="service"
             aria-label="service"
-            className="py-12 bg-gray-50 h-full lg:h-svh  flex flex-row justify-center items-center relative"
+            className="py-12 bg-gray-50 h-full flex flex-row justify-center items-center relative"
         >
             <div className="container mx-auto px-4 lg:px-32 ">
                 <h2 className="text-4xl font-bold mb-6 text-center">
