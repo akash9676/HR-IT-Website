@@ -59,45 +59,6 @@ const AboutUs = () => {
                             </p>
 
                             <h3 className="text-2xl font-semibold mb-4">
-                                Our Success
-                            </h3>
-                            <ul className="list-disc pl-5 space-y-4 mb-8">
-                                <li className="flex items-start space-x-3">
-                                    <CheckCircle className="text-green-500" />
-                                    <p className="text-gray-700">
-                                        Our Digital academy, on the plus side,
-                                        has graduated 25+ students over the past
-                                        6 months. By 2023, we will start to
-                                        offer diploma courses that will create
-                                        specialists and experts in the digital
-                                        marketing profession.
-                                    </p>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <CheckCircle className="text-green-500" />
-                                    <p className="text-gray-700">
-                                        For the past three years, at GoPro
-                                        Digital, we have designed and
-                                        implemented SEO strategies that drive
-                                        traffic, brand engagement, and, more
-                                        importantly, business growth for many
-                                        businesses.
-                                    </p>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <CheckCircle className="text-green-500" />
-                                    <p className="text-gray-700">
-                                        For the most part, through our
-                                        commitment to our core values, we strive
-                                        to deliver world-class digital marketing
-                                        services to a wide range of clients and
-                                        industries that produce outstanding
-                                        results.
-                                    </p>
-                                </li>
-                            </ul>
-
-                            <h3 className="text-2xl font-semibold mb-4">
                                 Our Mission
                             </h3>
                             <p className="text-gray-700">
