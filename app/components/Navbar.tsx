@@ -59,7 +59,7 @@ const Navbar = () => {
                     <ul className="flex flex-col justify-center items-center lg:flex-row lg:space-x-6 p-4 lg:p-0 mt-16 lg:mt-0">
                         <li>
                             <a
-                                href="#"
+                                href="#home"
                                 className="block py-2 lg:py-0 text-eerie-black"
                                 onClick={toggleNavbar}
                             >
@@ -68,7 +68,7 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="#service"
                                 className="block py-2 lg:py-0 text-eerie-black"
                                 onClick={toggleNavbar}
                             >
@@ -86,7 +86,7 @@ const Navbar = () => {
                         </li> */}
                         <li>
                             <a
-                                href="#"
+                                href="#about"
                                 className="block py-2 lg:py-0 text-eerie-black"
                                 onClick={toggleNavbar}
                             >
@@ -95,7 +95,7 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="#contact"
                                 className="block py-2 lg:py-1 bg-gradient-to-l from-persian-rose to-safety-orange text-white font-bold px-6 rounded transition duration-300 "
                                 onClick={toggleNavbar}
                             >
