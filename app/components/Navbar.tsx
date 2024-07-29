@@ -34,9 +34,9 @@ const Navbar = () => {
             <div className="container mx-auto flex justify-between items-center px-4 lg:px-32 relative">
                 <a
                     href="index.html"
-                    className="text-3xl font-bold font-league-spartan"
+                    className="text-2xl font-bold font-league-spartan"
                 >
-                    GoPro
+                    HR-IT Solutions
                 </a>
 
                 <button
@@ -56,10 +56,10 @@ const Navbar = () => {
                         navbarOpen ? "translate-y-0" : "-translate-y-full"
                     } lg:static lg:w-auto lg:transform-none lg:transition-none z-20`}
                 >
-                    <ul className="flex flex-col lg:flex-row lg:space-x-6 p-4 lg:p-0 mt-16 lg:mt-0">
+                    <ul className="flex flex-col justify-center items-center lg:flex-row lg:space-x-6 p-4 lg:p-0 mt-16 lg:mt-0">
                         <li>
                             <a
-                                href="index.html"
+                                href="#"
                                 className="block py-2 lg:py-0 text-eerie-black"
                                 onClick={toggleNavbar}
                             >
@@ -68,14 +68,14 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a
-                                href="services.html"
+                                href="#"
                                 className="block py-2 lg:py-0 text-eerie-black"
                                 onClick={toggleNavbar}
                             >
                                 Services
                             </a>
                         </li>
-                        <li>
+                        {/* <li>
                             <a
                                 href="projects.html"
                                 className="block py-2 lg:py-0 text-eerie-black"
@@ -83,10 +83,10 @@ const Navbar = () => {
                             >
                                 Projects
                             </a>
-                        </li>
+                        </li> */}
                         <li>
                             <a
-                                href="aboutus.html"
+                                href="#"
                                 className="block py-2 lg:py-0 text-eerie-black"
                                 onClick={toggleNavbar}
                             >
@@ -95,20 +95,11 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a
-                                href="contact.html"
-                                className="block py-2 lg:py-0 text-eerie-black"
-                                onClick={toggleNavbar}
-                            >
-                                Contact Us
-                            </a>
-                        </li>
-                        <li>
-                            <a
                                 href="#"
                                 className="block py-2 lg:py-0 bg-gradient-to-l from-persian-rose to-safety-orange text-white font-bold px-6 rounded transition duration-300"
                                 onClick={toggleNavbar}
                             >
-                                Get Started
+                                Contact Us
                             </a>
                         </li>
                     </ul>

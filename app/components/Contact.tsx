@@ -95,8 +95,8 @@ const Contact = () => {
                 </form>
 
                 <div className=" p-6 rounded-lg ">
-                    <div className="flex justify-between gap-6">
-                        <div className="contact-card bg-white p-4 px-14 rounded-lg flex items-center space-x-4">
+                    <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between gap-6">
+                        <div className="contact-card bg-white p-4 px-10 lg:px-14 rounded-lg flex items-center space-x-4 min-w-96">
                             <div className="p-3 rounded-full bg-teal-500 text-white">
                                 <Mail className="w-6 h-6" />
                             </div>
@@ -120,7 +120,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="contact-card bg-white p-4 px-14 rounded-lg flex items-center space-x-4">
+                        <div className="contact-card bg-white p-4 px-10 lg:px-14 rounded-lg flex items-center space-x-4 min-w-96">
                             <div className="p-3 rounded-full bg-indigo-600 text-white">
                                 <MapPin className="w-6 h-6" />
                             </div>
@@ -136,7 +136,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="contact-card bg-white p-4 px-14 rounded-lg flex items-center space-x-4">
+                        <div className="contact-card bg-white p-4 px-10 lg:px-14 rounded-lg flex items-center space-x-4 min-w-96">
                             <div className="p-3 rounded-full bg-red-600 text-white">
                                 <Phone className="w-6 h-6" />
                             </div>
