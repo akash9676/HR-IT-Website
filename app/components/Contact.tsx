@@ -11,9 +11,8 @@ const Contact = () => {
                 </h2>
 
                 <p className="text-gray-700 mb-8 text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    **Have a question or need assistance? Contact us today and
+                    let's start solving your IT challenges together!**
                 </p>
 
                 <form
@@ -108,14 +107,14 @@ const Contact = () => {
                                     href="mailto:support@goprodigital.net"
                                     className="text-blue-600"
                                 >
-                                    support@goprodigital.net
+                                    support@hritsolutions.com
                                 </a>
                                 <br />
                                 <a
                                     href="mailto:support@goprodigital.net"
                                     className="text-blue-600"
                                 >
-                                    support@goprodigital.net
+                                    info@hritsolutions.com
                                 </a>
                             </div>
                         </div>
@@ -129,9 +128,9 @@ const Contact = () => {
                                     Visit Here
                                 </h3>
                                 <address className="text-gray-700">
-                                    27 Division
+                                    1234 Elm Street
                                     <br />
-                                    Addis Ababa, Ethiopia
+                                    Springfield, IL 62704, USA
                                 </address>
                             </div>
                         </div>
@@ -148,14 +147,14 @@ const Contact = () => {
                                     href="tel:+1234567890"
                                     className="text-blue-600"
                                 >
-                                    +123 456 7890
+                                    +(555) 123-4567
                                 </a>
                                 <br />
                                 <a
                                     href="tel:+2414524526"
                                     className="text-blue-600"
                                 >
-                                    +241 452 4526
+                                    +(555) 987-6543
                                 </a>
                             </div>
                         </div>

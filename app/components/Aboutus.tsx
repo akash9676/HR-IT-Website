@@ -25,45 +25,23 @@ const AboutUs = () => {
                                 About Us
                             </h2>
                             <p className="text-gray-700 mb-8 text-justify">
-                                GoPro Digital is a full-service digital
-                                marketing agency founded back in 2019 that is
-                                dedicated to providing industry-leading
-                                marketing solutions to clients in Addis Ababa,
-                                Ethiopia, and beyond. We take pride in equipping
-                                digital marketers to become experts in their
-                                field, providing them with the tools and
-                                necessary resources to stay ahead of the curve
-                                in an ever-evolving digital landscape. As an
-                                agency that specializes in digital marketing, we
-                                fully understand the importance of a
-                                comprehensive approach to effectively promote
-                                our clients businesses online.
+                            HR-IT Solutions is a team of passionate IT professionals committed to delivering top-notch technology services to businesses of all sizes. We understand the challenges that come with managing IT in a fast-paced, ever-changing environment, and we strive to provide innovative solutions that are both practical and efficient. Our expertise spans across various IT domains, including managed services, cloud solutions, cybersecurity, and more. We take pride in our customer-centric approach, working closely with each client to tailor our services to their specific needs and objectives. At HR-IT Solutions, we're not just your IT provider; we're your strategic partner in achieving digital excellence.
+
                             </p>
 
                             <h3 className="text-2xl font-semibold mb-4 ">
                                 Who We Are
                             </h3>
                             <p className="text-gray-700 mb-8 text-justify">
-                                We offer a wide range of services, including
-                                website design and development, search engine
-                                optimization (SEO), pay-per-click (PPC)
-                                advertising, social media management, content
-                                marketing, and more. Each of the services we
-                                have listed are designed to work in tandem,
-                                creating a cohesive and effective digital
-                                marketing strategy that will help your business
-                                stand out from the competition.
+                            HR-IT Solutions is a dynamic team of IT experts dedicated to making technology work for your business. We specialize in providing comprehensive IT services that are tailored to meet the unique needs of each client. Our goal is to simplify complex technology, allowing you to focus on what you do best—running your business.
+
                             </p>
 
                             <h3 className="text-2xl font-semibold mb-4 ">
                                 Our Mission
                             </h3>
                             <p className="text-gray-700 text-justify">
-                                At vero eos et accusamus et iusto odio
-                                dignissimos ducimus qui blanditiis praesentium
-                                voluptatum deleniti atque corrupti quos dolores
-                                et quas molestias excepturi sint occaecati
-                                cupiditate non provident, similique sunt in.
+                            Our mission is to empower businesses with cutting-edge technology solutions that enhance efficiency, security, and growth. We believe in the power of technology to drive innovation and success, and we're passionate about helping our clients leverage it to their advantage. At HR-IT Solutions, we're here to support your digital journey every step of the way, ensuring that your IT infrastructure is robust, secure, and ready for the future.
                             </p>
                         </div>
                     </div>

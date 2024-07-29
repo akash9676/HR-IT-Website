@@ -11,16 +11,14 @@ const HeroSection = () => {
                 <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 mb-8 md:mb-0 md:mr-8 ">
                         <p className="text-gray-600 text-lg md:text-xl mb-2">
-                            GoPro Digital Marketing Agency
+                            HR- IT Solutions
                         </p>
-                        <h1 className="text-4xl md:text-6xl font-bold mb-4">
-                            For An Improved Business Experience!
+                        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                        Transforming Technology into Success
                         </h1>
                         <p className="text-gray-700 text-base md:text-lg mb-6 text-justify">
-                            We take pride in equipping digital marketers to
-                            become experts in their field, providing them with
-                            the tools and necessary resources to stay ahead of
-                            the curve in an ever-evolving digital landscape.
+                        We empower businesses with innovative IT services and solutions, helping them stay competitive and efficient in a rapidly changing digital world. Our team is dedicated to providing the best tools and resources to ensure your business thrives.
+
                         </p>
                         <a
                             href="#"
