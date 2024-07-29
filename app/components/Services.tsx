@@ -18,7 +18,7 @@ const Services = () => {
                 <h2 className="text-4xl font-bold mb-6 text-center">
                     Services We Provided
                 </h2>
-                <p className="text-gray-700 mb-12 ">
+                <p className="text-gray-700 mb-12 text-center">
                     We leverage a holistic approach to IT services, offering
                     everything from IT consulting to network and cloud
                     solutions, ensuring your business stands out in the digital

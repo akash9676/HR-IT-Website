@@ -11,10 +11,13 @@ const HeroSection = () => {
                 <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 mb-8 md:mb-0 md:mr-8 ">
                         <p className="text-gray-600 text-lg md:text-xl mb-2">
-                            HR- IT Solutions
+                            HR-IT Solutions
                         </p>
                         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                            Transforming Technology into Success
+                            Transforming Technology into{" "}
+                            <span className="underline decoration-orange-400 underline-offset-4">
+                                Success
+                            </span>
                         </h1>
                         <p className="text-gray-700 text-base md:text-lg mb-6 text-justify">
                             We empower businesses with innovative IT services
@@ -25,9 +28,9 @@ const HeroSection = () => {
                         </p>
                         <a
                             href="#"
-                            className="inline-block px-8 py-3 bg-blue-600 text-white text-lg rounded-md"
+                            className="inline-block px-8 py-3 bg-gradient-to-l from-persian-rose to-safety-orange text-white text-lg rounded-md"
                         >
-                            Get Started
+                            Contact Us
                         </a>
                     </div>
                     <div className="md:w-1/2">

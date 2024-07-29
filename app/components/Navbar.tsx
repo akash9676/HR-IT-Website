@@ -96,7 +96,7 @@ const Navbar = () => {
                         <li>
                             <a
                                 href="#"
-                                className="block py-2 lg:py-0 bg-gradient-to-l from-persian-rose to-safety-orange text-white font-bold px-6 rounded transition duration-300"
+                                className="block py-2 lg:py-1 bg-gradient-to-l from-persian-rose to-safety-orange text-white font-bold px-6 rounded transition duration-300 "
                                 onClick={toggleNavbar}
                             >
                                 Contact Us
