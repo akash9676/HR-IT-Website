@@ -49,7 +49,7 @@ const Contact = () => {
                         />
 
                         <input
-                            type="number"
+                            type="text"
                             name="phone"
                             aria-label="phone"
                             placeholder="Phone number"
@@ -85,12 +85,17 @@ const Contact = () => {
                         </label>
                     </div>
 
-                    <button
-                        type="submit"
-                        className="btn btn-primary mt-6 bg-gradient-to-l from-persian-rose to-safety-orange text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
-                    >
-                        Send Message
-                    </button>
+                    <div className="relative inline-flex group mt-4">
+                        <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                        <a
+                            href="#"
+                            title="Get quote now"
+                            className="relative inline-flex items-center justify-center px-6 py-2 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                            role="button"
+                        >
+                            Send Message
+                        </a>
+                    </div>
                 </form>
 
                 {/* <div className=" p-6 rounded-lg ">

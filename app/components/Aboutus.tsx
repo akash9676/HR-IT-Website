@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { Play, CheckCircle } from "lucide-react";
-import aboutbanner from "../../public/images/about-banner.jpg";
+import aboutbanner from "../../public/images/about-us.png";
 
 const AboutUs = () => {
     return (
@@ -250,15 +250,7 @@ const AboutUs = () => {
                                 managing IT in a fast-paced, ever-changing
                                 environment, and we strive to provide innovative
                                 solutions that are both practical and efficient.
-                                Our expertise spans across various IT domains,
-                                including managed services, cloud solutions,
-                                cybersecurity, and more. We take pride in our
-                                customer-centric approach, working closely with
-                                each client to tailor our services to their
-                                specific needs and objectives. At HR-IT
-                                Solutions, were not just your IT provider; were
-                                your strategic partner in achieving digital
-                                excellence.
+                                
                             </p>
 
                             <h3 className="text-2xl font-semibold mb-4 ">

@@ -158,105 +158,230 @@ const Services = () => {
         //         </ul>
         //     </div>
         // </section>
-        <section
-            id="new-features"
-            className="py-8 sm:py-10 lg:py-16"
-        >
-            <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div className="text-center">
-                    <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl">
-                        Boost Your Productivity
-                    </h2>
-                    <p className="mt-4 text-base leading-7 text-gray-600 sm:mt-8">
-                        Enhance your workflow with advanced features
-                    </p>
-                </div>
-                <div className="grid grid-cols-1 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 xl:mt-24">
-                    {/* Feature 1 */}
-                    <div className="md:p-8 lg:p-14 flex flex-col justify-center items-center">
-                        <div className="w-14 h-14 rounded-full bg-purple-200 flex justify-center items-center">
-                            <MessageCircle className="w-8 h-8" />
-                        </div>
-                        <h3 className="mt-12 text-xl font-bold text-gray-900">
-                            Advanced Analytics
-                        </h3>
-                        <p className="mt-5 text-base text-gray-600">
-                            Track and analyze your data with powerful analytics
-                            tools. Gain valuable insights for better
-                            decision-making.
-                        </p>
-                    </div>
 
-                    {/* Feature 2 */}
-                    <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 flex flex-col justify-center items-center">
-                        <div className="w-14 h-14 rounded-full bg-teal-200 flex justify-center items-center">
-                            <Monitor className="w-8 h-8" />
-                        </div>
-                        <h3 className="mt-12 text-xl font-bold text-gray-900">
-                            Fast Integration
-                        </h3>
-                        <p className="mt-5 text-base text-gray-600">
-                            Seamlessly integrate with your existing tools and
-                            systems for a smooth workflow experience.
-                        </p>
-                    </div>
+        // Type 2
+        // <section
+        //     id="new-features"
+        //     className="py-8 sm:py-10 lg:py-16"
+        // >
+        //     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        //         <div className="text-center">
+        //             <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl">
+        //                 Boost Your Productivity
+        //             </h2>
+        //             <p className="mt-4 text-base leading-7 text-gray-600 sm:mt-8">
+        //                 Enhance your workflow with advanced features
+        //             </p>
+        //         </div>
+        //         <div className="grid grid-cols-1 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 xl:mt-24">
+        //             {/* Feature 1 */}
+        //             <div className="md:p-8 lg:p-14 flex flex-col justify-center items-center">
+        //                 <div className="w-14 h-14 rounded-full bg-purple-200 flex justify-center items-center">
+        //                     <MessageCircle className="w-8 h-8" />
+        //                 </div>
+        //                 <h3 className="mt-12 text-xl font-bold text-gray-900">
+        //                     Advanced Analytics
+        //                 </h3>
+        //                 <p className="mt-5 text-base text-gray-600">
+        //                     Track and analyze your data with powerful analytics
+        //                     tools. Gain valuable insights for better
+        //                     decision-making.
+        //                 </p>
+        //             </div>
 
-                    {/* Feature 3 */}
-                    <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 flex flex-col justify-center items-center">
-                        <div className="w-14 h-14 rounded-full bg-yellow-200 flex justify-center items-center">
-                            <Lightbulb className="w-8 h-8" />
-                        </div>
-                        <h3 className="mt-12 text-xl font-bold text-gray-900">
-                            Security First
-                        </h3>
-                        <p className="mt-5 text-base text-gray-600">
-                            Ensure the safety of your data with top-notch
-                            security features. Your privacy is our priority.
-                        </p>
-                    </div>
+        //             {/* Feature 2 */}
+        //             <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 flex flex-col justify-center items-center">
+        //                 <div className="w-14 h-14 rounded-full bg-teal-200 flex justify-center items-center">
+        //                     <Monitor className="w-8 h-8" />
+        //                 </div>
+        //                 <h3 className="mt-12 text-xl font-bold text-gray-900">
+        //                     Fast Integration
+        //                 </h3>
+        //                 <p className="mt-5 text-base text-gray-600">
+        //                     Seamlessly integrate with your existing tools and
+        //                     systems for a smooth workflow experience.
+        //                 </p>
+        //             </div>
 
-                    {/* Feature 4 */}
-                    <div className="md:p-8 lg:p-14 md:border-t md:border-gray-200 flex flex-col justify-center items-center">
-                        <div className="w-14 h-14 rounded-full bg-red-200 flex justify-center items-center">
-                            <Smartphone className="w-8 h-8" />
-                        </div>
-                        <h3 className="mt-12 text-xl font-bold text-gray-900">
-                            Cloud Integration
-                        </h3>
-                        <p className="mt-5 text-base text-gray-600">
-                            Access your data from anywhere with seamless cloud
-                            integration. Work without boundaries.
-                        </p>
-                    </div>
+        //             {/* Feature 3 */}
+        //             <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 flex flex-col justify-center items-center">
+        //                 <div className="w-14 h-14 rounded-full bg-yellow-200 flex justify-center items-center">
+        //                     <Lightbulb className="w-8 h-8" />
+        //                 </div>
+        //                 <h3 className="mt-12 text-xl font-bold text-gray-900">
+        //                     Security First
+        //                 </h3>
+        //                 <p className="mt-5 text-base text-gray-600">
+        //                     Ensure the safety of your data with top-notch
+        //                     security features. Your privacy is our priority.
+        //                 </p>
+        //             </div>
 
-                    {/* Feature 5 */}
-                    <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t flex flex-col justify-center items-center">
-                        <div className="w-14 h-14 rounded-full bg-green-200 flex justify-center items-center">
-                            <Archive className="w-8 h-8" />
-                        </div>
-                        <h3 className="mt-12 text-xl font-bold text-gray-900">
-                            Task Management
-                        </h3>
-                        <p className="mt-5 text-base text-gray-600">
-                            Organize your workflow with efficient task
-                            management features. Stay on top of your projects
-                            effortlessly.
-                        </p>
-                    </div>
+        //             {/* Feature 4 */}
+        //             <div className="md:p-8 lg:p-14 md:border-t md:border-gray-200 flex flex-col justify-center items-center">
+        //                 <div className="w-14 h-14 rounded-full bg-red-200 flex justify-center items-center">
+        //                     <Smartphone className="w-8 h-8" />
+        //                 </div>
+        //                 <h3 className="mt-12 text-xl font-bold text-gray-900">
+        //                     Cloud Integration
+        //                 </h3>
+        //                 <p className="mt-5 text-base text-gray-600">
+        //                     Access your data from anywhere with seamless cloud
+        //                     integration. Work without boundaries.
+        //                 </p>
+        //             </div>
 
-                    {/* Feature 6 */}
-                    <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t flex flex-col justify-center items-center">
-                        <div className="w-14 h-14 rounded-full bg-orange-200 flex justify-center items-center">
-                            <Wrench className="w-8 h-8" />
+        //             {/* Feature 5 */}
+        //             <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t flex flex-col justify-center items-center">
+        //                 <div className="w-14 h-14 rounded-full bg-green-200 flex justify-center items-center">
+        //                     <Archive className="w-8 h-8" />
+        //                 </div>
+        //                 <h3 className="mt-12 text-xl font-bold text-gray-900">
+        //                     Task Management
+        //                 </h3>
+        //                 <p className="mt-5 text-base text-gray-600">
+        //                     Organize your workflow with efficient task
+        //                     management features. Stay on top of your projects
+        //                     effortlessly.
+        //                 </p>
+        //             </div>
+
+        //             {/* Feature 6 */}
+        //             <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t flex flex-col justify-center items-center">
+        //                 <div className="w-14 h-14 rounded-full bg-orange-200 flex justify-center items-center">
+        //                     <Wrench className="w-8 h-8" />
+        //                 </div>
+        //                 <h3 className="mt-12 text-xl font-bold text-gray-900">
+        //                     Performance Metrics
+        //                 </h3>
+        //                 <p className="mt-5 text-base text-gray-600">
+        //                     Monitor and measure your performance with
+        //                     comprehensive metrics. Optimize your processes for
+        //                     maximum efficiency.
+        //                 </p>
+        //             </div>
+        //         </div>
+        //     </div>
+        // </section>
+
+        //type 3
+        <section id="new-features" className="py-5">
+            <div className="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
+                <h2 className="mb-1 text-3xl font-extrabold leading-tight text-gray-900">
+                    Our Services
+                </h2>
+                <p className="mb-12 text-lg text-gray-500">
+                    Here is a few of the awesome Services we provide.
+                </p>
+                <div className="w-full">
+                    <div className="flex flex-col w-full mb-10 sm:flex-row">
+                        <div className="w-full mb-10 sm:mb-0 sm:w-1/2">
+                            <div className="relative h-full ml-0 mr-0 sm:mr-10">
+                                <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-teal-400 rounded-lg"></span>
+                                <div className="relative h-full p-5 bg-white border-2 border-teal-400 rounded-lg">
+                                    <div className="flex items-center -mt-1">
+                                        <h3 className="my-2 ml-3 text-lg font-bold text-gray-800">
+                                            DAPP Development
+                                        </h3>
+                                    </div>
+                                    <p className="mt-3 mb-1 text-xs font-medium text-teal-400 uppercase">
+                                        ------------
+                                    </p>
+                                    <p className="mb-2 text-gray-600">
+                                        A decentralized application (dapp) is an
+                                        application built on a decentralized
+                                        network that combines a smart contract
+                                        and a frontend user interface.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <h3 className="mt-12 text-xl font-bold text-gray-900">
-                            Performance Metrics
-                        </h3>
-                        <p className="mt-5 text-base text-gray-600">
-                            Monitor and measure your performance with
-                            comprehensive metrics. Optimize your processes for
-                            maximum efficiency.
-                        </p>
+                        <div className="w-full sm:w-1/2">
+                            <div className="relative h-full ml-0 md:mr-10">
+                                <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-orange-400 rounded-lg"></span>
+                                <div className="relative h-full p-5 bg-white border-2 border-orange-400 rounded-lg">
+                                    <div className="flex items-center -mt-1">
+                                        <h3 className="my-2 ml-3 text-lg font-bold text-gray-800">
+                                            Web 3.0 Development
+                                        </h3>
+                                    </div>
+                                    <p className="mt-3 mb-1 text-xs font-medium text-orange-500 uppercase">
+                                        ------------
+                                    </p>
+                                    <p className="mb-2 text-gray-600">
+                                        Web 3.0 is the third generation of
+                                        Internet services that will focus on
+                                        understanding and analyzing data to
+                                        provide a semantic web.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col w-full mb-5 sm:flex-row">
+                        <div className="w-full mb-10 sm:mb-0 sm:w-1/2">
+                            <div className="relative h-full ml-0 mr-0 sm:mr-10">
+                                <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-purple-400 rounded-lg"></span>
+                                <div className="relative h-full p-5 bg-white border-2 border-purple-400 rounded-lg">
+                                    <div className="flex items-center -mt-1">
+                                        <h3 className="my-2 ml-3 text-lg font-bold text-gray-800">
+                                            Project Audit
+                                        </h3>
+                                    </div>
+                                    <p className="mt-3 mb-1 text-xs font-medium text-purple-400 uppercase">
+                                        ------------
+                                    </p>
+                                    <p className="mb-2 text-gray-600">
+                                        A Project Audit is a formal review of a
+                                        project, which is intended to assess the
+                                        extent up to which project management
+                                        standards are being upheld.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-full mb-10 sm:mb-0 sm:w-1/2">
+                            <div className="relative h-full ml-0 mr-0 sm:mr-10">
+                                <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-yellow-400 rounded-lg"></span>
+                                <div className="relative h-full p-5 bg-white border-2 border-yellow-400 rounded-lg">
+                                    <div className="flex items-center -mt-1">
+                                        <h3 className="my-2 ml-3 text-lg font-bold text-gray-800">
+                                            Hacking / RE
+                                        </h3>
+                                    </div>
+                                    <p className="mt-3 mb-1 text-xs font-medium text-yellow-400 uppercase">
+                                        ------------
+                                    </p>
+                                    <p className="mb-2 text-gray-600">
+                                        A security hacker is someone who
+                                        explores methods for breaching defenses
+                                        and exploiting weaknesses in a computer
+                                        system or network.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-full sm:w-1/2">
+                            <div className="relative h-full ml-0 md:mr-10">
+                                <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-400 rounded-lg"></span>
+                                <div className="relative h-full p-5 bg-white border-2 border-green-400 rounded-lg">
+                                    <div className="flex items-center -mt-1">
+                                        <h3 className="my-2 ml-3 text-lg font-bold text-gray-800">
+                                            Bot/Script Development
+                                        </h3>
+                                    </div>
+                                    <p className="mt-3 mb-1 text-xs font-medium text-green-400 uppercase">
+                                        ------------
+                                    </p>
+                                    <p className="mb-2 text-gray-600">
+                                        Bot development frameworks were created
+                                        as advanced software tools that
+                                        eliminate a large amount of manual work
+                                        and accelerate the development process.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
