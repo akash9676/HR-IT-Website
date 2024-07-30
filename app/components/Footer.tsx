@@ -58,7 +58,7 @@ const Footer = () => {
                                 title="Our phone"
                                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
                             >
-                                +1 (201) 626-0540
+                                +1 (201) 123-4567
                             </a>
                         </div>
                         <div className="flex">
@@ -69,12 +69,12 @@ const Footer = () => {
                                 title="Our email"
                                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
                             >
-                                Tumma.raghava@gmail.com
+                                contact@hr-it-solutions.com
                             </a>
                         </div>
                         <div className="flex">
                             <p className="mr-1 text-gray-800">Address:</p>
-                            <p>1553 w brookview dr lindon utah 84042</p>
+                            <p>1234 Elm Street, Springfield, IL 62704, USA</p>
                         </div>
                     </div>
                     <div>
