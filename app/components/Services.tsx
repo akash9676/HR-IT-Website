@@ -281,17 +281,14 @@ const Services = () => {
                                 <div className="relative h-full p-5 bg-white border-2 border-teal-400 rounded-lg">
                                     <div className="flex items-center -mt-1">
                                         <h3 className="my-2 ml-3 text-lg font-bold text-gray-800">
-                                            DAPP Development
+                                            Automated Software Deployment
                                         </h3>
                                     </div>
                                     <p className="mt-3 mb-1 text-xs font-medium text-teal-400 uppercase">
                                         ------------
                                     </p>
                                     <p className="mb-2 text-gray-600">
-                                        A decentralized application (dapp) is an
-                                        application built on a decentralized
-                                        network that combines a smart contract
-                                        and a frontend user interface.
+                                    Make software updates easy with automated deployment. We help you automate the process of installing and updating software, so everything runs smoothly and consistently.
                                     </p>
                                 </div>
                             </div>
@@ -302,17 +299,14 @@ const Services = () => {
                                 <div className="relative h-full p-5 bg-white border-2 border-orange-400 rounded-lg">
                                     <div className="flex items-center -mt-1">
                                         <h3 className="my-2 ml-3 text-lg font-bold text-gray-800">
-                                            Web 3.0 Development
+                                        Infrastructure Automation
                                         </h3>
                                     </div>
                                     <p className="mt-3 mb-1 text-xs font-medium text-orange-500 uppercase">
                                         ------------
                                     </p>
                                     <p className="mb-2 text-gray-600">
-                                        Web 3.0 is the third generation of
-                                        Internet services that will focus on
-                                        understanding and analyzing data to
-                                        provide a semantic web.
+                                    Manage your IT infrastructure effortlessly with automation. We set up systems that automatically handle hardware and software setup, making it simple to add new resources as needed.
                                     </p>
                                 </div>
                             </div>
@@ -325,17 +319,14 @@ const Services = () => {
                                 <div className="relative h-full p-5 bg-white border-2 border-purple-400 rounded-lg">
                                     <div className="flex items-center -mt-1">
                                         <h3 className="my-2 ml-3 text-lg font-bold text-gray-800">
-                                            Project Audit
+                                        CI/CD Pipelines
                                         </h3>
                                     </div>
                                     <p className="mt-3 mb-1 text-xs font-medium text-purple-400 uppercase">
                                         ------------
                                     </p>
                                     <p className="mb-2 text-gray-600">
-                                        A Project Audit is a formal review of a
-                                        project, which is intended to assess the
-                                        extent up to which project management
-                                        standards are being upheld.
+                                    Speed up your development with CI/CD pipelines. These tools automatically test and deploy your code, ensuring quick and reliable software updates.
                                     </p>
                                 </div>
                             </div>
@@ -346,17 +337,14 @@ const Services = () => {
                                 <div className="relative h-full p-5 bg-white border-2 border-yellow-400 rounded-lg">
                                     <div className="flex items-center -mt-1">
                                         <h3 className="my-2 ml-3 text-lg font-bold text-gray-800">
-                                            Hacking / RE
+                                        Server Automation
                                         </h3>
                                     </div>
                                     <p className="mt-3 mb-1 text-xs font-medium text-yellow-400 uppercase">
                                         ------------
                                     </p>
                                     <p className="mb-2 text-gray-600">
-                                        A security hacker is someone who
-                                        explores methods for breaching defenses
-                                        and exploiting weaknesses in a computer
-                                        system or network.
+                                    Simplify server management with automation. We automate routine tasks like server setup and maintenance, so you can focus on more important things.
                                     </p>
                                 </div>
                             </div>
@@ -367,17 +355,14 @@ const Services = () => {
                                 <div className="relative h-full p-5 bg-white border-2 border-green-400 rounded-lg">
                                     <div className="flex items-center -mt-1">
                                         <h3 className="my-2 ml-3 text-lg font-bold text-gray-800">
-                                            Bot/Script Development
+                                        Automated Monitoring and Alerts
                                         </h3>
                                     </div>
                                     <p className="mt-3 mb-1 text-xs font-medium text-green-400 uppercase">
                                         ------------
                                     </p>
                                     <p className="mb-2 text-gray-600">
-                                        Bot development frameworks were created
-                                        as advanced software tools that
-                                        eliminate a large amount of manual work
-                                        and accelerate the development process.
+                                    Keep an eye on your systems with automated monitoring. We set up tools that automatically check for issues and alert you, helping you fix problems quickly.
                                     </p>
                                 </div>
                             </div>
