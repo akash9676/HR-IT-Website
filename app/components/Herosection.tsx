@@ -46,7 +46,7 @@ const HeroSection = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="w-1/2">
+                    <div className="w-full md:w-1/2">
                         <figure className="w-full">
                             <Image
                                 src={Herobanner}
