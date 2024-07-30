@@ -32,12 +32,29 @@ const Navbar = () => {
             }`}
         >
             <div className="container mx-auto flex justify-between items-center px-4 lg:px-32 relative">
-                <a
-                    href="index.html"
-                    className="text-2xl font-bold font-league-spartan"
-                >
-                    HR-IT Solutions
-                </a>
+                <div className="flex flex-row gap-2">
+                    <svg
+                        className="w-8 text-deep-purple-accent-400"
+                        viewBox="0 0 24 24"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeMiterlimit="10"
+                        stroke="currentColor"
+                        fill="none"
+                    >
+                        <rect x="3" y="1" width="7" height="12"></rect>
+                        <rect x="3" y="17" width="7" height="6"></rect>
+                        <rect x="14" y="1" width="7" height="6"></rect>
+                        <rect x="14" y="11" width="7" height="12"></rect>
+                    </svg>
+                    <a
+                        href="index.html"
+                        className="text-2xl font-bold font-league-spartan"
+                    >
+                        HR-IT Solutions
+                    </a>
+                </div>
 
                 <button
                     className="text-4xl focus:outline-none lg:hidden z-30"
