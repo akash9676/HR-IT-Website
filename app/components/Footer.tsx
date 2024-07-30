@@ -40,9 +40,7 @@ const Footer = () => {
                         </a>
                         <div className="mt-6 lg:max-w-sm">
                             <p className="text-sm text-gray-800">
-                                Sed ut perspiciatis unde omnis iste natus error
-                                sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam.
+                            HR-IT Solutions: Pioneering innovative HR technology and solutions. Empowering your business with cutting-edge tools and expertise.
                             </p>
                         </div>
                     </div>
@@ -136,8 +134,7 @@ const Footer = () => {
                             </a>
                         </div>
                         <p className="mt-4 text-sm text-gray-500">
-                            Bacon ipsum dolor amet short ribs pig sausage
-                            prosciutto chicken spare ribs salami.
+                        Connect with us on social media for the latest updates and insights.
                         </p>
                     </div>
                 </div>

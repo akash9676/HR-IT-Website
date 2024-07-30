@@ -299,14 +299,14 @@ const Services = () => {
                                 <div className="relative h-full p-5 bg-white border-2 border-orange-400 rounded-lg">
                                     <div className="flex items-center -mt-1">
                                         <h3 className="my-2 ml-3 text-lg font-bold text-gray-800">
-                                        Infrastructure Automation
+                                        Automated Monitoring and Alerts
                                         </h3>
                                     </div>
                                     <p className="mt-3 mb-1 text-xs font-medium text-orange-500 uppercase">
                                         ------------
                                     </p>
                                     <p className="mb-2 text-gray-600">
-                                    Manage your IT infrastructure effortlessly with automation. We set up systems that automatically handle hardware and software setup, making it simple to add new resources as needed.
+                                    Keep an eye on your systems with automated monitoring. We set up tools that automatically check for issues and alert you, helping you fix problems quickly.
                                     </p>
                                 </div>
                             </div>
@@ -355,14 +355,14 @@ const Services = () => {
                                 <div className="relative h-full p-5 bg-white border-2 border-green-400 rounded-lg">
                                     <div className="flex items-center -mt-1">
                                         <h3 className="my-2 ml-3 text-lg font-bold text-gray-800">
-                                        Automated Monitoring and Alerts
+                                        Infrastructure Automation
                                         </h3>
                                     </div>
                                     <p className="mt-3 mb-1 text-xs font-medium text-green-400 uppercase">
                                         ------------
                                     </p>
                                     <p className="mb-2 text-gray-600">
-                                    Keep an eye on your systems with automated monitoring. We set up tools that automatically check for issues and alert you, helping you fix problems quickly.
+                                    Manage your IT infrastructure effortlessly with automation. We set up systems that automatically handle hardware and software setup, making it simple to add new resources as needed.
                                     </p>
                                 </div>
                             </div>
