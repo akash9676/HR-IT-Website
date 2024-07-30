@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Herobanner from "../../public/images/herosection.png";
+import Herobanner from "../../public/images/hero-section.png";
 
 const HeroSection = () => {
     return (
@@ -46,7 +46,7 @@ const HeroSection = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="w-4/5">
+                    <div className="w-1/2">
                         <figure className="w-full">
                             <Image
                                 src={Herobanner}
