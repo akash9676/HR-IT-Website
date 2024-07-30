@@ -2,7 +2,6 @@
 import React from "react";
 import { Play, CheckCircle } from "lucide-react";
 
-
 const Footer = () => {
     return (
         <section id="about" className="border-t-2">
@@ -36,7 +35,7 @@ const Footer = () => {
                                 ></rect>
                             </svg>
                             <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                Company
+                                HR-IT Solutions
                             </span>
                         </a>
                         <div className="mt-6 lg:max-w-sm">
@@ -45,7 +44,6 @@ const Footer = () => {
                                 sit voluptatem accusantium doloremque
                                 laudantium, totam rem aperiam.
                             </p>
-                            
                         </div>
                     </div>
                     <div className="space-y-2 text-sm">
@@ -60,7 +58,7 @@ const Footer = () => {
                                 title="Our phone"
                                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
                             >
-                                850-123-5021
+                                +1 (201) 626-0540
                             </a>
                         </div>
                         <div className="flex">
@@ -71,21 +69,12 @@ const Footer = () => {
                                 title="Our email"
                                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
                             >
-                                info@lorem.mail
+                                Tumma.raghava@gmail.com
                             </a>
                         </div>
                         <div className="flex">
                             <p className="mr-1 text-gray-800">Address:</p>
-                            <a
-                                href="https://www.google.com/maps"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="Our address"
-                                title="Our address"
-                                className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                            >
-                                312 Lovely Street, NY
-                            </a>
+                            <p>1553 w brookview dr lindon utah 84042</p>
                         </div>
                     </div>
                     <div>
@@ -153,7 +142,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
                     <p className="text-sm text-gray-600">
-                        © Copyright 2020 Lorem Inc. All rights reserved.
+                        © Copyright 2024 HR-IT Soluctions Inc. All rights reserved.
                     </p>
                     <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
                         <li>
