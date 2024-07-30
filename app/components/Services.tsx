@@ -265,7 +265,7 @@ const Services = () => {
         // </section>
 
         //type 3
-        <section id="new-features" className="py-5">
+        <section id="services" className="py-5">
             <div className="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
                 <h2 className="mb-1 text-3xl font-extrabold leading-tight text-gray-900">
                     Our Services
