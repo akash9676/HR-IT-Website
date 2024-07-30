@@ -72,7 +72,7 @@ const Navbar = () => {
                                 className="block py-2 lg:py-0 text-eerie-black"
                                 onClick={toggleNavbar}
                             >
-                                Services
+                                About Us
                             </a>
                         </li>
                         {/* <li>
@@ -90,17 +90,28 @@ const Navbar = () => {
                                 className="block py-2 lg:py-0 text-eerie-black"
                                 onClick={toggleNavbar}
                             >
-                                About Us
+                                Services
                             </a>
                         </li>
                         <li>
-                            <a
+                            {/* <a
                                 href="#contact"
                                 className="block py-2 lg:py-1 bg-gradient-to-l from-persian-rose to-safety-orange text-white font-bold px-6 rounded transition duration-300 "
                                 onClick={toggleNavbar}
                             >
                                 Contact Us
-                            </a>
+                            </a> */}
+                            <div className="relative inline-flex  group">
+                                <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                                <a
+                                    href="#"
+                                    title="Get quote now"
+                                    className="relative inline-flex items-center justify-center px-6 py-2 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                                    role="button"
+                                >
+                                    Contact Now
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </nav>

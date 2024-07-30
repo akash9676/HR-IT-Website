@@ -4,7 +4,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
     return (
-        <section id="contact" className="section py-16 bg-gray-100">
+        <section id="contact" className="section py-10">
             <div className="container mx-auto px-4 md:px-16 lg:px-32">
                 <h2 className="text-3xl font-bold mb-6 text-center">
                     Lets Contact With Us
@@ -93,7 +93,7 @@ const Contact = () => {
                     </button>
                 </form>
 
-                <div className=" p-6 rounded-lg ">
+                {/* <div className=" p-6 rounded-lg ">
                     <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between gap-6">
                         <div className="contact-card bg-white p-4 px-10 lg:px-14 rounded-lg flex items-center space-x-4 min-w-96">
                             <div className="p-3 rounded-full bg-teal-500 text-white">
@@ -159,7 +159,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );
