@@ -1,6 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/public/HR-IT logo.svg";
+import Image from "next/image";
+import Herobanner from "@/public/images/hero-section.png";
 
 const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
@@ -33,7 +36,10 @@ const Navbar = () => {
         >
             <div className="container mx-auto flex justify-between items-center px-4 lg:px-32 relative">
                 <div className="flex flex-row gap-2">
-                    <svg
+                    <a href="#">
+                        <Image src={logo} alt="hero banner" className="w-36" />
+                    </a>
+                    {/* <svg
                         className="w-8 text-deep-purple-accent-400"
                         viewBox="0 0 24 24"
                         strokeLinejoin="round"
@@ -47,13 +53,7 @@ const Navbar = () => {
                         <rect x="3" y="17" width="7" height="6"></rect>
                         <rect x="14" y="1" width="7" height="6"></rect>
                         <rect x="14" y="11" width="7" height="12"></rect>
-                    </svg>
-                    <a
-                        href="#"
-                        className="text-2xl font-bold font-league-spartan"
-                    >
-                        HR-IT Solutions
-                    </a>
+                    </svg> */}
                 </div>
 
                 <button

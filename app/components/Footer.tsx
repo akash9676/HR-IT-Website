@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import Image from "next/image";
+import logo from "@/public/HR-IT logo.svg";
 import { Play, CheckCircle } from "lucide-react";
 
 const Footer = () => {
@@ -14,33 +16,17 @@ const Footer = () => {
                             title="Company"
                             className="inline-flex items-center"
                         >
-                            <svg
-                                className="w-8 text-deep-purple-accent-400"
-                                viewBox="0 0 24 24"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeMiterlimit="10"
-                                stroke="currentColor"
-                                fill="none"
-                            >
-                                <rect x="3" y="1" width="7" height="12"></rect>
-                                <rect x="3" y="17" width="7" height="6"></rect>
-                                <rect x="14" y="1" width="7" height="6"></rect>
-                                <rect
-                                    x="14"
-                                    y="11"
-                                    width="7"
-                                    height="12"
-                                ></rect>
-                            </svg>
-                            <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                HR-IT Solutions
-                            </span>
+                            <Image
+                                src={logo}
+                                alt="hero banner"
+                                className="w-36"
+                            />
                         </a>
-                        <div className="mt-6 lg:max-w-sm">
+                        <div className="lg:max-w-sm">
                             <p className="text-sm text-gray-800">
-                            HR-IT Solutions: Pioneering innovative HR technology and solutions. Empowering your business with cutting-edge tools and expertise.
+                                HR-IT Solutions: Pioneering innovative HR
+                                technology and solutions. Empowering your
+                                business with cutting-edge tools and expertise.
                             </p>
                         </div>
                     </div>
@@ -134,7 +120,8 @@ const Footer = () => {
                             </a>
                         </div>
                         <p className="mt-4 text-sm text-gray-500">
-                        Connect with us on social media for the latest updates and insights.
+                            Connect with us on social media for the latest
+                            updates and insights.
                         </p>
                     </div>
                 </div>

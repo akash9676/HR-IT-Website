@@ -22,35 +22,27 @@ const AboutUs = () => {
                         </div>
                         <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
                             <div className="flex flex-col bg-gray-200/50 p-8">
-                                <dt className="text-sm font-semibold leading-6 text-gray-600">
-                                   
-                                </dt>
+                                <dt className="text-sm font-semibold leading-6 text-gray-600"></dt>
                                 <dd className="order-first text-xl font-semibold tracking-tight text-gray-900">
-                                Customer-Centric Approach
+                                    Customer-Centric Approach
                                 </dd>
                             </div>
                             <div className="flex flex-col bg-gray-200/50 p-8">
-                                <dt className="text-sm font-semibold leading-6 text-gray-600">
-                                    
-                                </dt>
+                                <dt className="text-sm font-semibold leading-6 text-gray-600"></dt>
                                 <dd className="order-first text-xl font-semibold tracking-tight text-gray-900">
-                                Industry Leading Technology
+                                    Industry Leading Technology
                                 </dd>
                             </div>
                             <div className="flex flex-col bg-gray-200/50 p-8">
-                                <dt className="text-sm font-semibold leading-6 text-gray-600">
-                                
-                                </dt>
+                                <dt className="text-sm font-semibold leading-6 text-gray-600"></dt>
                                 <dd className="order-first text-xl font-semibold tracking-tight text-gray-900">
-                                Commitment to Excellence
+                                    Commitment to Excellence
                                 </dd>
                             </div>
                             <div className="flex flex-col bg-gray-200/50 p-8">
-                                <dt className="text-sm font-semibold leading-6 text-gray-600">
-                                   
-                                </dt>
+                                <dt className="text-sm font-semibold leading-6 text-gray-600"></dt>
                                 <dd className="order-first text-xl font-semibold tracking-tight text-gray-900">
-                                Collaborative Partnerships
+                                    Collaborative Partnerships
                                 </dd>
                             </div>
                         </dl>
@@ -250,7 +242,6 @@ const AboutUs = () => {
                                 managing IT in a fast-paced, ever-changing
                                 environment, and we strive to provide innovative
                                 solutions that are both practical and efficient.
-                                
                             </p>
 
                             <h3 className="text-2xl font-semibold mb-4 ">
