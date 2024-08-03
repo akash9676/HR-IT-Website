@@ -1,10 +1,20 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogContent,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
+    AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 const Contact: React.FC = () => {
     const form = useRef<HTMLFormElement>(null);
+    const [alertVisible, setAlertVisible] = useState(false);
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -17,6 +27,10 @@ const Contact: React.FC = () => {
                 .then(
                     () => {
                         console.log("SUCCESS!");
+                        setAlertVisible(true); // Show alert
+                        if (form.current) {
+                            form.current.reset(); // Reset the form values
+                        }
                     },
                     (error) => {
                         console.log("FAILED...", error.text);
@@ -119,73 +133,27 @@ const Contact: React.FC = () => {
                     </div>
                 </form>
 
-                {/* <div className=" p-6 rounded-lg ">
-                    <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between gap-6">
-                        <div className="contact-card bg-white p-4 px-10 lg:px-14 rounded-lg flex items-center space-x-4 min-w-96">
-                            <div className="p-3 rounded-full bg-teal-500 text-white">
-                                <Mail className="w-6 h-6" />
-                            </div>
-                            <div>
-                                <h3 className="text-lg font-semibold mb-2">
-                                    Mail Here
-                                </h3>
-                                <a
-                                    href="mailto:support@goprodigital.net"
-                                    className="text-blue-600"
+                {alertVisible && (
+                    <AlertDialog
+                        open={alertVisible}
+                        onOpenChange={setAlertVisible}
+                    >
+                        <AlertDialogContent>
+                            <AlertDialogHeader>
+                                <AlertDialogTitle>
+                                    Message has been sent
+                                </AlertDialogTitle>
+                            </AlertDialogHeader>
+                            <AlertDialogFooter>
+                                <AlertDialogAction
+                                    onClick={() => setAlertVisible(false)}
                                 >
-                                    support@hritsolutions.com
-                                </a>
-                                <br />
-                                <a
-                                    href="mailto:support@goprodigital.net"
-                                    className="text-blue-600"
-                                >
-                                    info@hritsolutions.com
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="contact-card bg-white p-4 px-10 lg:px-14 rounded-lg flex items-center space-x-4 min-w-96">
-                            <div className="p-3 rounded-full bg-indigo-600 text-white">
-                                <MapPin className="w-6 h-6" />
-                            </div>
-                            <div>
-                                <h3 className="text-lg font-semibold mb-2">
-                                    Visit Here
-                                </h3>
-                                <address className="text-gray-700">
-                                    1234 Elm Street
-                                    <br />
-                                    Springfield, IL 62704, USA
-                                </address>
-                            </div>
-                        </div>
-
-                        <div className="contact-card bg-white p-4 px-10 lg:px-14 rounded-lg flex items-center space-x-4 min-w-96">
-                            <div className="p-3 rounded-full bg-red-600 text-white">
-                                <Phone className="w-6 h-6" />
-                            </div>
-                            <div>
-                                <h3 className="text-lg font-semibold mb-2">
-                                    Call Here
-                                </h3>
-                                <a
-                                    href="tel:+1234567890"
-                                    className="text-blue-600"
-                                >
-                                    +(555) 123-4567
-                                </a>
-                                <br />
-                                <a
-                                    href="tel:+2414524526"
-                                    className="text-blue-600"
-                                >
-                                    +(555) 987-6543
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+                                    Continue
+                                </AlertDialogAction>
+                            </AlertDialogFooter>
+                        </AlertDialogContent>
+                    </AlertDialog>
+                )}
             </div>
         </section>
     );
