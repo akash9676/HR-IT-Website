@@ -1,8 +1,30 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { Mail, MapPin, Phone } from "lucide-react";
 
-const Contact = () => {
+const Contact: React.FC = () => {
+    const form = useRef<HTMLFormElement>(null);
+
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        if (form.current) {
+            emailjs
+                .sendForm("service_ij5llse", "template_ti4cwds", form.current, {
+                    publicKey: "dKhXcazRkQMqmNH2S",
+                })
+                .then(
+                    () => {
+                        console.log("SUCCESS!");
+                    },
+                    (error) => {
+                        console.log("FAILED...", error.text);
+                    }
+                );
+        }
+    };
+
     return (
         <section id="contact" className="section py-10">
             <div className="container mx-auto px-4 md:px-16 lg:px-32">
@@ -16,7 +38,8 @@ const Contact = () => {
                 </p>
 
                 <form
-                    action=""
+                    ref={form}
+                    onSubmit={sendEmail}
                     className="bg-white p-6 rounded-lg shadow-lg mb-12"
                 >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -86,15 +109,13 @@ const Contact = () => {
                     </div>
 
                     <div className="relative inline-flex group mt-4">
-                        <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-                        <a
-                            href="#contact"
-                            title="Get quote now"
+                        <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                        <button
+                            type="submit"
                             className="relative inline-flex items-center justify-center px-6 py-2 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                            role="button"
                         >
                             Send Message
-                        </a>
+                        </button>
                     </div>
                 </form>
 
