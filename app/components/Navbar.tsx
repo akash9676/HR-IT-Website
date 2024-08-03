@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/public/HR-IT logo.svg";
+import logo from "@/public/HR IT Logo.svg";
 import Image from "next/image";
 import Herobanner from "@/public/images/hero-section.png";
 
