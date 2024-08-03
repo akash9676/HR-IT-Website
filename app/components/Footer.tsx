@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <section id="about" className="border-t-2">
             <div className="px-4 pt-16  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-                <div className="flex flex-row mb-8">
+                <div className="flex flex-row mb-8 max-sm:gap-2">
                     <div className="sm:col-span-2">
                         <a
                             href="/"
@@ -30,37 +30,6 @@ const Footer = () => {
                             </p>
                         </div>
                     </div>
-                    {/* <div className="space-y-2 text-sm">
-                        <p className="text-base font-bold tracking-wide text-gray-900">
-                            Contacts
-                        </p>
-                        <div className="flex">
-                            <p className="mr-1 text-gray-800">Phone:</p>
-                            <a
-                                href="tel:850-123-5021"
-                                aria-label="Our phone"
-                                title="Our phone"
-                                className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                            >
-                                +1 (201) 123-4567
-                            </a>
-                        </div>
-                        <div className="flex">
-                            <p className="mr-1 text-gray-800">Email:</p>
-                            <a
-                                href="mailto:info@lorem.mail"
-                                aria-label="Our email"
-                                title="Our email"
-                                className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                            >
-                                contact@hr-it-solutions.com
-                            </a>
-                        </div>
-                        <div className="flex">
-                            <p className="mr-1 text-gray-800">Address:</p>
-                            <p>1234 Elm Street, Springfield, IL 62704, USA</p>
-                        </div>
-                    </div> */}
                     <div className="flex-1"></div>
                     <div>
                         <span className="text-base font-bold tracking-wide text-gray-900">

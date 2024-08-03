@@ -37,7 +37,11 @@ const Navbar = () => {
             <div className="container mx-auto flex justify-between items-center px-4 lg:px-32 relative">
                 <div className="flex flex-row gap-2">
                     <a href="#">
-                        <Image src={logo} alt="hero banner" className="w-44" />
+                        <Image
+                            src={logo}
+                            alt="hero banner"
+                            className="w-36 lg:w-44"
+                        />
                     </a>
                     {/* <svg
                         className="w-8 text-deep-purple-accent-400"
