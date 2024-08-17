@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
 
         if (form.current) {
             emailjs
-                .sendForm("service_ij5llse", "template_ti4cwds", form.current, {
+                .sendForm("service_f55wa7b", "template_ti4cwds", form.current, {
                     publicKey: "dKhXcazRkQMqmNH2S",
                 })
                 .then(
