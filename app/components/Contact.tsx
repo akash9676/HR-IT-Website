@@ -1,6 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
+
 "use client";
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useState } from "react";
 import {
     AlertDialog,
     AlertDialogAction,
@@ -8,34 +9,50 @@ import {
     AlertDialogFooter,
     AlertDialogHeader,
     AlertDialogTitle,
-    AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-import { Mail, MapPin, Phone } from "lucide-react";
 
 const Contact: React.FC = () => {
-    const form = useRef<HTMLFormElement>(null);
+    // State management for form fields
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
+    const [phone, setPhone] = useState("");
+    const [message, setMessage] = useState("");
     const [alertVisible, setAlertVisible] = useState(false);
 
-    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
 
-        if (form.current) {
-            emailjs
-                .sendForm("service_1lorr58", "template_ngjh8qf", form.current, {
-                    publicKey: "AwUVECRnBkjDfYTqD",
-                })
-                .then(
-                    () => {
-                        console.log("SUCCESS!");
-                        setAlertVisible(true); // Show alert
-                        if (form.current) {
-                            form.current.reset(); // Reset the form values
-                        }
-                    },
-                    (error) => {
-                        console.log("FAILED...", error.text);
-                    }
-                );
+        const data = {
+            name,
+            email,
+            subject,
+            phone,
+            message,
+        };
+
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                setAlertVisible(true);
+                // Manually reset each form field
+                setName("");
+                setEmail("");
+                setSubject("");
+                setPhone("");
+                setMessage("");
+            } else {
+                console.error("Error sending message:", response.statusText);
+            }
+        } catch (error) {
+            console.error("Error sending message:", error);
         }
     };
 
@@ -43,17 +60,16 @@ const Contact: React.FC = () => {
         <section id="contact" className="section py-10">
             <div className="container mx-auto px-4 md:px-16 lg:px-32">
                 <h2 className="text-3xl font-bold mb-6 text-center">
-                    Lets Contact With Us
+                    Let's Contact Us
                 </h2>
 
                 <p className="text-gray-700 mb-8 text-center">
                     **Have a question or need assistance? Contact us today and
-                    lets start solving your IT challenges together!**
+                    let's start solving your IT challenges together!**
                 </p>
 
                 <form
-                    ref={form}
-                    onSubmit={sendEmail}
+                    onSubmit={handleSubmit}
                     className="bg-white p-6 rounded-lg shadow-lg mb-12"
                 >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -64,6 +80,8 @@ const Contact: React.FC = () => {
                             placeholder="Your name*"
                             required
                             className="input-field p-3 border rounded-lg w-full"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
                         />
 
                         <input
@@ -73,6 +91,8 @@ const Contact: React.FC = () => {
                             placeholder="Email address*"
                             required
                             className="input-field p-3 border rounded-lg w-full"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
 
@@ -83,6 +103,8 @@ const Contact: React.FC = () => {
                             aria-label="subject"
                             placeholder="Subject"
                             className="input-field p-3 border rounded-lg w-full"
+                            value={subject}
+                            onChange={(e) => setSubject(e.target.value)}
                         />
 
                         <input
@@ -91,6 +113,8 @@ const Contact: React.FC = () => {
                             aria-label="phone"
                             placeholder="Phone number"
                             className="input-field p-3 border rounded-lg w-full"
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
                         />
                     </div>
 
@@ -100,6 +124,8 @@ const Contact: React.FC = () => {
                         placeholder="Your message...*"
                         required
                         className="input-field p-3 border rounded-lg w-full mt-6"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
 
                     <div className="flex items-center mt-6">
@@ -113,7 +139,7 @@ const Contact: React.FC = () => {
                         <label htmlFor="terms" className="text-gray-700">
                             Accept{" "}
                             <a href="#" className="text-blue-600">
-                                Terms of Services
+                                Terms of Service
                             </a>{" "}
                             and{" "}
                             <a href="#" className="text-blue-600">
@@ -126,7 +152,7 @@ const Contact: React.FC = () => {
                         <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
                         <button
                             type="submit"
-                            className="relative inline-flex items-center justify-center px-6 py-2 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                            className="relative inline-flex items-center justify-center px-6 py-2 text-lg font-bold text-white transition-all duration-200 bg-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                         >
                             Send Message
                         </button>
@@ -141,7 +167,7 @@ const Contact: React.FC = () => {
                         <AlertDialogContent>
                             <AlertDialogHeader>
                                 <AlertDialogTitle>
-                                    Message has been sent
+                                    Message Sent
                                 </AlertDialogTitle>
                             </AlertDialogHeader>
                             <AlertDialogFooter>
